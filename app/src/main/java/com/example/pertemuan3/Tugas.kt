@@ -85,6 +85,18 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                     .padding(top = 145.dp)
                     .size(140.dp)
             )
+
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(
+                        top = 430.dp,
+                        start = 5.dp,
+                        end = 5.dp
+                    )
+            ) {
+            }
         }
     }
 }
