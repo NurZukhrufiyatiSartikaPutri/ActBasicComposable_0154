@@ -79,7 +79,11 @@ fun TugasLogin(modifier: Modifier = Modifier) {
 
             Image(
                 painter = painterResource(id = R.drawable.notasbalok),
-                contentDescription = "Logo Universitas Muhammadiyah Yogyakarta"
+                contentDescription = "Logo Universitas Muhammadiyah Yogyakarta",
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 145.dp)
+                    .size(140.dp)
             )
         }
     }
