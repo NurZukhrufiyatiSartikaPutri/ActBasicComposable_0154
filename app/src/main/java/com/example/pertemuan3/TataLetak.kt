@@ -20,13 +20,12 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-
 @Composable
 fun TataletakColumn(modifier: Modifier) {
-
     Column(
         modifier = modifier.padding(
             top = 20.dp,
@@ -34,7 +33,6 @@ fun TataletakColumn(modifier: Modifier) {
             end = 20.dp
         )
     ) {
-
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -42,15 +40,12 @@ fun TataletakColumn(modifier: Modifier) {
     }
 }
 
-
 @Composable
 fun TataletakRow(modifier: Modifier) {
-
     Row(
         modifier = modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -58,17 +53,14 @@ fun TataletakRow(modifier: Modifier) {
     }
 }
 
-
 @Composable
 fun TataletakBox(modifier: Modifier) {
-
     Box(
         modifier = modifier
             .fillMaxHeight()
             .fillMaxWidth(),
         contentAlignment = Alignment.Center
     ) {
-
         Text(text = "Box 1")
         Text(text = "Column 1")
         Text(text = "Row 1")
@@ -77,29 +69,22 @@ fun TataletakBox(modifier: Modifier) {
     }
 }
 
-
 @Composable
 fun TataletakColumnRow(modifier: Modifier) {
-
     Column {
-
-        // Baris 1
         Row(
             modifier = modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
             Text(text = "Komponen3Baris1")
         }
 
-        // Baris 2
         Row(
             modifier = modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-
             Text(text = "Komponen1Baris2")
             Text(text = "Komponen2Baris2")
             Text(text = "Komponen3Baris2")
@@ -107,26 +92,19 @@ fun TataletakColumnRow(modifier: Modifier) {
     }
 }
 
-
 @Composable
 fun TataletakRowColumn(modifier: Modifier) {
-
     Row(
         modifier = modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-
-        // Kolom 1
         Column {
-
             Text(text = "Komponen1Kolom1")
             Text(text = "Komponen2Kolom1")
             Text(text = "Komponen3Kolom1")
         }
 
-        // Kolom 2
         Column {
-
             Text(text = "Komponen1Kolom2")
             Text(text = "Komponen2Kolom2")
             Text(text = "Komponen3Kolom2")
@@ -134,76 +112,122 @@ fun TataletakRowColumn(modifier: Modifier) {
     }
 }
 
-
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
 
     val gambar = painterResource(
-        id = R.drawable.notasbalok
+        id = R.drawable.music
     )
 
     Column {
 
+        // BOX ATAS
         Box(
             modifier = modifier
                 .fillMaxWidth()
                 .height(110.dp)
-                .background(color = Color.Yellow),
+                .background(
+                    Color(0xFFFFF4B8)
+                ),
             contentAlignment = Alignment.Center
         ) {
 
-            Column {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 6.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
 
+                // BARIS 1
                 Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceEvenly
+                    modifier = Modifier.fillMaxWidth()
                 ) {
+                    Text(
+                        text = "Col1_Row1_Komponen1",
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.weight(1f)
+                    )
 
-                    Text(text = "Col1_Row1_Komponen1")
-                    Text(text = "Col1_Row1_Komponen2")
-                    Text(text = "Col1_Row1_Komponen3")
+                    Text(
+                        text = "Col1_Row1_Komponen2",
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.weight(1f)
+                    )
+
+                    Text(
+                        text = "Col1_Row1_Komponen3",
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.weight(1f)
+                    )
                 }
 
+                // BARIS 2
                 Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceEvenly
+                    modifier = Modifier.fillMaxWidth()
                 ) {
+                    Text(
+                        text = "Col1_Row2_Komponen1",
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.weight(1f)
+                    )
 
-                    Text(text = "Col1_Row2_Komponen1")
-                    Text(text = "Col1_Row2_Komponen2")
-                    Text(text = "Col1_Row2_Komponen3")
+                    Text(
+                        text = "Col1_Row2_Komponen2",
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.weight(1f)
+                    )
+
+                    Text(
+                        text = "Col1_Row2_Komponen3",
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.weight(1f)
+                    )
                 }
             }
         }
 
+        // JARAK ANTAR BOX
         Spacer(
             modifier = Modifier.height(10.dp)
         )
 
+        // BOX BAWAH
         Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(300.dp)
-                .background(color = Color.Cyan),
+                .background(
+                    Color(0xFFFFF8D6)
+                ),
             contentAlignment = Alignment.Center
         ) {
 
-            Image(
-                painter = gambar,
-                contentDescription = null,
-                contentScale = ContentScale.Fit
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
 
-            Text(
-                text = "My Music",
-                fontSize = 50.sp,
-                color = Color.Red,
-                fontWeight = FontWeight.Bold,
-                fontFamily = FontFamily.Cursive,
-                modifier = Modifier.align(
-                    alignment = Alignment.Center
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.height(220.dp),
+                    contentScale = ContentScale.Fit
                 )
-            )
+
+                Text(
+                    text = "My Music",
+                    fontSize = 40.sp,
+                    color = Color.Red,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = FontFamily.Cursive
+                )
+            }
         }
     }
 }
