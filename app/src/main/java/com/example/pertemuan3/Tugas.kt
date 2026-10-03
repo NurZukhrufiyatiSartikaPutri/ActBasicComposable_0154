@@ -64,6 +64,8 @@ fun TugasLogin(modifier: Modifier = Modifier) {
 
             Text(
                 text = "Ini adalah halaman login,",
+                color = Color.White,
+                fontSize = 14.sp,
                 modifier = Modifier
                     .align(Alignment.TopCenter)
                     .padding(top = 58.dp)
