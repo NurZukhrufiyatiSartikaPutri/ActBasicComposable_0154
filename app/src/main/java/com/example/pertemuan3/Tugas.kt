@@ -53,7 +53,13 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
                     .align(Alignment.TopCenter)
-                    .padding(top = 20.dp)
+                    .padding(top = 20.dp),
+                style = TextStyle(
+                    shadow = Shadow(
+                        color = Color.White,
+                        blurRadius = 4f
+                    )
+                )
             )
         }
     }
