@@ -63,7 +63,10 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             )
 
             Text(
-                text = "Ini adalah halaman login,"
+                text = "Ini adalah halaman login,",
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 58.dp)
             )
         }
     }
