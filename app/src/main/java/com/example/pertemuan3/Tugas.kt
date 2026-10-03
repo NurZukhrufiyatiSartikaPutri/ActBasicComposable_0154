@@ -33,3 +33,11 @@ fun TugasLogin(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize()
     ) {
 
+        Image(
+            painter = painterResource(id = R.drawable.gambar_utama),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+    }
+}
