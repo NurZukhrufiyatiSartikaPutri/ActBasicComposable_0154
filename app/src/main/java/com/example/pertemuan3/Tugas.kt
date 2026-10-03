@@ -61,6 +61,10 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                     )
                 )
             )
+
+            Text(
+                text = "Ini adalah halaman login,"
+            )
         }
     }
 }
