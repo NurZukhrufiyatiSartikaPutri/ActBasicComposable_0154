@@ -45,6 +45,10 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 .fillMaxSize()
                 .statusBarsPadding()
         ) {
+
+            Text(
+                text = "Login"
+            )
         }
     }
 }
