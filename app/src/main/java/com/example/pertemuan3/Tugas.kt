@@ -100,3 +100,13 @@ fun TugasLogin(modifier: Modifier = Modifier) {
         }
     }
 }
+
+
+@Preview(
+    showBackground = true,
+    showSystemUi = true
+)
+@Composable
+fun TugasLoginPreview() {
+    TugasLogin()
+}
