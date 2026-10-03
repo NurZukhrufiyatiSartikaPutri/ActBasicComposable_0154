@@ -76,6 +76,11 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                     )
                 )
             )
+
+            Image(
+                painter = painterResource(id = R.drawable.notasbalok),
+                contentDescription = "Logo Universitas Muhammadiyah Yogyakarta"
+            )
         }
     }
 }
