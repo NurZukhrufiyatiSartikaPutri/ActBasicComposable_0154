@@ -47,7 +47,10 @@ fun TugasLogin(modifier: Modifier = Modifier) {
         ) {
 
             Text(
-                text = "Login"
+                text = "Login",
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 20.dp)
             )
         }
     }
