@@ -48,6 +48,8 @@ fun TugasLogin(modifier: Modifier = Modifier) {
 
             Text(
                 text = "Login",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier
                     .align(Alignment.TopCenter)
                     .padding(top = 20.dp)
